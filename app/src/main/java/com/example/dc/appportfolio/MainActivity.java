@@ -44,23 +44,26 @@ public class MainActivity extends ActionBarActivity {
         CharSequence appName = "None";
         int duration = Toast.LENGTH_SHORT;
         switch(view.getId()){
-            case R.id.button1:
-                appName = "button1";
+            case R.id.spotify:
+                appName = "spotify streamer";
                 break;
-            case R.id.button2:
-                appName = "button2";
+            case R.id.movies:
+                appName = "popular movies";
                 break;
-            case R.id.button3:
-                appName = "button3";
+            case R.id.superduo:
+                appName = "Super Duo";
                 break;
-            case R.id.button4:
-                appName = "button4";
+            case R.id.build:
+                appName = "Build It Bigger";
                 break;
-            case R.id.button5:
-                appName = "button5";
+            case R.id.material:
+                appName = "material design";
+                break;
+            case R.id.capstone:
+                appName = "capstone";
                 break;
         }
-        CharSequence text = String.format("Hello this is %s", appName);
+        CharSequence text = String.format("This button will launch my %s app!", appName);
         Toast.makeText(context, text, duration).show();
     }
 }

@@ -10,15 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content" />-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:layout_marginBottom="32dp"
         android:textSize="24sp"
-        android:text="Apps" />
+        android:text="My Nanodegree Apps!" />
 
     <LinearLayout
         android:layout_height="wrap_content"
@@ -31,28 +30,34 @@
 
         <Button
             style="@style/ButtonStyle"
-            android:id="@+id/button1"
-            android:text="I am a button"
-            />
+            android:id="@+id/movies"
+            android:text="Popular Movies" />
 
         <Button
             style="@style/ButtonStyle"
-            android:id="@+id/button2"
-            android:text="I am a button 2" />
+            android:id="@+id/spotify"
+            android:text="Spotify Streamer" />
+
 
         <Button
             style="@style/ButtonStyle"
-            android:id="@+id/button3"
-            android:text="I am a button 3" />
+            android:id="@+id/superduo"
+            android:text="Super Duo" />
 
         <Button
             style="@style/ButtonStyle"
-            android:id="@+id/button4"
-            android:text="I am a button 4" />
+            android:id="@+id/build"
+            android:text="Build It Bigger" />
 
         <Button
             style="@style/ButtonStyle"
-            android:id="@+id/button5"
-            android:text="I am a button 5" />
+            android:id="@+id/material"
+            android:text="Material Design" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:background="#6A1B9A"
+            android:id="@+id/capstone"
+            android:text="Capstone: My Own App" />
     </LinearLayout>
 </LinearLayout>
