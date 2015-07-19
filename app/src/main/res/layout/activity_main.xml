@@ -31,33 +31,33 @@
         <Button
             style="@style/ButtonStyle"
             android:id="@+id/movies"
-            android:text="Popular Movies" />
+            android:text="@string/popular_movies" />
 
         <Button
             style="@style/ButtonStyle"
             android:id="@+id/spotify"
-            android:text="Spotify Streamer" />
+            android:text="@string/spotify_streamer" />
 
 
         <Button
             style="@style/ButtonStyle"
             android:id="@+id/superduo"
-            android:text="Super Duo" />
+            android:text="@string/super_duo" />
 
         <Button
             style="@style/ButtonStyle"
             android:id="@+id/build"
-            android:text="Build It Bigger" />
+            android:text="@string/build_bigger" />
 
         <Button
             style="@style/ButtonStyle"
             android:id="@+id/material"
-            android:text="Material Design" />
+            android:text="@string/material_design" />
 
         <Button
             style="@style/ButtonStyle"
-            android:background="#6A1B9A"
+            android:background="@color/purple"
             android:id="@+id/capstone"
-            android:text="Capstone: My Own App" />
+            android:text="@string/capstone_app" />
     </LinearLayout>
 </LinearLayout>

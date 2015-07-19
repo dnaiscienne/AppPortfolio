@@ -1,42 +1,18 @@
 package com.example.dc.appportfolio;
 
 import android.content.Context;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     public void sendMessage(View view){
@@ -45,25 +21,25 @@ public class MainActivity extends ActionBarActivity {
         int duration = Toast.LENGTH_SHORT;
         switch(view.getId()){
             case R.id.spotify:
-                appName = "spotify streamer";
+                appName = getString(R.string.spotify_streamer);
                 break;
             case R.id.movies:
-                appName = "popular movies";
+                appName = getString(R.string.popular_movies);
                 break;
             case R.id.superduo:
-                appName = "Super Duo";
+                appName = getString(R.string.super_duo);
                 break;
             case R.id.build:
-                appName = "Build It Bigger";
+                appName = getString(R.string.build_bigger);
                 break;
             case R.id.material:
-                appName = "material design";
+                appName = getString(R.string.material_design);
                 break;
             case R.id.capstone:
-                appName = "capstone";
+                appName = getString(R.string.capstone_app);
                 break;
         }
-        CharSequence text = String.format("This button will launch my %s app!", appName);
+        CharSequence text = String.format(getString(R.string.sample_toast), appName);
         Toast.makeText(context, text, duration).show();
     }
 }
